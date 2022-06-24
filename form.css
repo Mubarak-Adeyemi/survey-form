@@ -1,0 +1,122 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #e6e6ee;
+  color: #2c3345;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+#title, #description{
+  text-align: center;
+  background-color: #2c3345;
+  margin: 0 auto;
+  width: 696px;
+  color: whitesmoke;
+  height: 50px;
+}
+
+p {
+  text-align: left;
+  font-weight: bold;
+  color: #2c3345;
+}
+
+
+#survey-form {
+  text-align: center;
+  width: 700px;
+  max-width: 700px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  font-size: 14px; 
+}
+
+fieldset {
+  border: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px #b6b4b4;
+
+}
+
+fieldset:not(:last-child) {
+  border-bottom: 3px double #b6b4b4;
+}
+
+label{
+  display: block;
+  text-align: left;
+  margin: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="submit"],
+select {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 0 20px;
+  background-color: #f3f3fe;
+
+}
+
+#checks label {
+  display: block;
+  width: 40%;
+  float: left;
+}
+
+textarea {
+  margin: auto;
+  width: 100%;
+  height: 200px;
+  border: 2px solid #b6b4b4;
+  background-color: #e6e6ee;
+  border-radius: 10px;
+}
+input[type="submit"] {
+  background-color: rgba(70, 130, 180, 0.8);
+  color: whitesmoke;
+  font-size: 1.5em;
+  box-shadow: 0px 3px steelblue ;
+}
+
+
+/* Psuedo class */
+
+input:hover,
+textarea:hover,
+select:hover {
+  border: 1px solid royalblue;
+  box-shadow: 0px 0px 5px steelblue;
+
+}
+
+input:active,
+textarea:active,
+select:active {
+  border: 1px solid royalblue;
+  box-shadow: 0px 0px 5px steelblue;
+}
+
+input[type="submit"]:hover {
+  color: rgb(255, 196, 124);
+  background-color: rgb(70, 130, 200);
+  box-shadow: 0px 5px rgb(25, 66, 99) ;
+}
+
+input[type="submit"]:focus {
+  background-color: rgb(70, 130, 255);
+  box-shadow: 0px 5px rgb(4, 44, 87) ;
+}
+
+input::placeholder,
+textarea::placeholder  {
+  font-style:italic;
+  color: rosybrown;
+}

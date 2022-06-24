@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="form.css" type="text/css">
+    </head>
+
+<body>
+    <h1 id="title">Student Survey Form</h1>
+    <p id="description">Please fill out this form to improve our services</p>
+    <form action="" id="survey-form">
+        
+        <fieldset>
+            <label id="name-label"> Your Name
+            <input type="text" id="name" name="your-name" placeholder="Your Name" required />
+            </label>
+            <label id="email-label"> Your Email
+            <input type="email" id="email" name="email" placeholder="example@email.com" required />
+            </label>
+            <label id="number-label"> Your age
+            <input type="number" id="number" name="age" min="10" max="100" placeholder="Your age" />
+            </label>
+        </fieldset>
+        <fieldset>
+            <label> <p>How long have you been a student here? </p>
+            <select id="dropdown">
+                <option value="">Please Select</option>
+                <option value="">Less than a month</option>
+                <option value="">1-6 months</option>
+                <option value="">6 months to 1 year</option>
+                <option value="">More than 1 year</option>
+                <option value="">1-3 years</option>
+                <option value="">More than 3 years</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset> <p>Would you recommend our school to a friend?</p> 
+            <label >
+                <input type="radio" name="recommendation" id="recommendation" value="definitely">Definitely 
+            </label>
+            <label >
+                <input type="radio" name="recommendation" id="recommendation" value="maybe">Maybe
+            </label>
+            <label >
+                <input type="radio" name="recommendation" id="recommendation" value="Not-sure">Not sure 
+            </label>
+        </fieldset>
+        <fieldset id="checks">
+            <p>Choose your favorite activities</p>
+            <label><input type="checkbox" value="Quiz">Quiz </label>
+            <label><input type="checkbox" value="Architectural">Architectural Activity </label>
+            <label><input type="checkbox" value="EducationalTour">Educational Tour</label>
+            <label><input type="checkbox" value="Extempore">Extempore</label>
+            <label><input type="checkbox" value="Advertisement">Advertisement</label>
+            <label><input type="checkbox" value="Mime">Mime</label>
+            <label><input type="checkbox" value="CaseStudies">Case Studies</label>
+            <label><input type="checkbox" value="BlindArtist">Blind Artist </label>
+            <label><input type="checkbox" value="IceBreakers">Ice Breakers</label>
+            <label><input type="checkbox" value="Debate">Debate</label>
+            <label><input type="checkbox" value="Charades">Charades</label>
+            <label><input type="checkbox" value="DrawSwords">Draw Swords</label>
+            <label><input type="checkbox" value="BallGame">Ball Game</label>
+            <label><input type="checkbox" value="Brainstorming Sessions">Brainstorming Sessions </label>
+            <label><input type="checkbox" value="ConceptDrawings">Concept Drawing</label>
+      </fieldset>
+      <fieldset>
+        <p>Additional comments</p>
+        <label ><textarea name="comments" placeholder="Add your comment..."></textarea></label>
+        <label><input type="submit" id="submit" value="Submit" name="submit"></label>
+  </fieldset>
+    
+
+    </form>
+</body>
+</html>
